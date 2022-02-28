@@ -1,0 +1,16 @@
+:root {
+  --header-font: "Julius Sans One", sans-serif;
+  --sub-font: "Sulphur Point", sans-serif;
+}
+
+.name-home {
+  font-family: var(--header-font) !important;
+  margin-top: 50px;
+  margin-left: 56px;
+}
+
+.navigation {
+  font-family: var(--sub-font);
+  list-style: none;
+  text-decoration: none;
+}
