@@ -4,13 +4,32 @@
 }
 
 .name-home {
-  font-family: var(--header-font) !important;
-  margin-top: 50px;
-  margin-left: 56px;
+  font-family: var(--header-font);
+  margin-left: 250px;
+  margin-top: 80px;
 }
 
-.navigation {
+.page-navigation {
+  position: relative;
+  top: -49px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 250px;
   font-family: var(--sub-font);
-  list-style: none;
+}
+
+.page-link {
+  margin-left: 50px;
+  margin-top: 0;
+}
+
+.page-link a {
   text-decoration: none;
+  color: #5d6775;
+  font-size: 20px;
+}
+
+.page-link a:hover {
+  color: #97a8c1;
+  transition-duration: 300ms;
 }
