@@ -9,6 +9,16 @@
   margin-top: 80px;
 }
 
+.name-home a {
+  color: #020b16;
+  text-decoration: none;
+}
+
+.name-home a:hover {
+  color: #97a8c1;
+  transition-duration: 300ms;
+}
+
 .page-navigation {
   position: relative;
   top: -49px;
@@ -32,4 +42,9 @@
 .page-link a:hover {
   color: #97a8c1;
   transition-duration: 300ms;
+}
+
+.page-link .current {
+  border: solid 1px #97a8c1;
+  padding: 6px 18px;
 }
