@@ -115,6 +115,13 @@ p {
   margin-top: 50px;
 }
 
+.pain-point-individual {
+  border: 0.8px solid var(--sub-text-color);
+  margin: 0 auto;
+  padding: 20px 5px;
+  background-color: #ffffff;
+}
+
 /*PERSONA AND PROBLEM STATEMENT*/
 .persona-section {
   margin-top: 60px;
@@ -142,4 +149,127 @@ p {
 .digital-wireframe-section {
   margin-top: 5px;
   padding: 50px 68px;
+}
+
+/*USABILITY STUDY FINDINGS*/
+.usability-study-findings {
+  margin-top: 80px;
+  background-color: var(--project-bg);
+  border-radius: 10px;
+  padding: 50px 68px;
+}
+
+.round-findings {
+  border: 0.8px solid var(--sub-text-color);
+  margin: 0 auto;
+  padding: 20px 5px;
+  background-color: #ffffff;
+}
+
+.findings {
+  padding-top: 20px;
+  padding-left: 120px !important;
+  padding-right: 120px;
+}
+
+.findings-line {
+  padding: 10px;
+}
+
+.usability-study-title {
+  margin-bottom: 40px;
+}
+
+/*REFINING THE DESIGN*/
+.refining-the-desgin {
+  margin-top: 80px;
+}
+
+.mockups {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+
+/*ACCESSIBILITY*/
+.accessibility-section {
+  margin-top: 80px;
+  background-color: var(--project-bg);
+  border-radius: 10px;
+  padding: 50px 68px;
+}
+
+.accessibility-point {
+  border: 0.8px solid var(--sub-text-color);
+  margin: 0 auto;
+  padding: 20px 5px;
+  background-color: #ffffff;
+}
+
+/*REFINED DESIGNS*/
+.refined-designs-section {
+  margin-top: 80px;
+}
+
+/*HI-FI PROTOTYPE*/
+.hifi-protorype {
+  margin-top: 60px;
+}
+
+/*GOING FORWARD*/
+.end-section {
+  margin-top: 80px;
+}
+.going-forward {
+  margin-bottom: 20px;
+}
+
+.takeaways {
+  border: 1px solid var(--hover-text);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 50px 68px;
+  margin-bottom: 60px;
+}
+
+.takeaway-paragraph {
+  padding: 20px 50px;
+}
+
+/*NEXT STEPS*/
+.next-steps {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  background-color: var(--project-bg);
+  border-radius: 10px;
+  padding: 50px 68px;
+}
+
+/*FOOTER*/
+.footer-link {
+  padding: 24px;
+}
+
+.footer-link a {
+  color: var(--sub-text-color);
+  text-decoration: none;
+}
+
+.footer-link a:hover {
+  color: white !important;
+  background-color: rgba(94, 101, 109, 0.85) !important;
+  transition: 600ms !important;
+  padding: 10px 20px;
+}
+
+.footer-link .active {
+  text-decoration: underline;
+}
+
+.footer-link .active a:hover {
+  color: red !important;
+}
+
+.footer-all {
+  margin-bottom: 150px;
 }
