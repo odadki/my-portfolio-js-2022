@@ -5,6 +5,7 @@
   --hover-text: #cedaea;
   --hover-bg: #5e656d;
   --project-bg: #ebf0f6;
+  --darker-text-color: #2f3a47;
 }
 
 /*BOOTSTRAP NAVBAR HEADER*/
@@ -67,7 +68,7 @@ p {
 }
 
 .title-text h3 {
-  text-decoration: 1.5px underline;
+  text-decoration: 1.5px;
   margin-bottom: 30px;
 }
 
@@ -80,6 +81,12 @@ p {
   display: block;
   margin: 0 auto;
   max-width: 600px !important;
+}
+
+.carrots-title-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .title-text {
@@ -272,5 +279,21 @@ p {
 }
 
 .footer-all {
-  margin-bottom: 150px;
+  margin-bottom: 70px;
+}
+
+/*FOOTER CODE*/
+.footer-code {
+  font-family: var(--sub-font);
+  color: var(--sub-text-color);
+  margin-bottom: 70px;
+}
+
+.footer-code-link {
+  color: var(--darker-text-color);
+}
+
+.footer-code-link:hover {
+  color: var(--sub-text-color);
+  transition: 600ms;
 }
