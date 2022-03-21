@@ -6,6 +6,9 @@
   --hover-bg: #5e656d;
   --project-bg: #ebf0f6;
   --darker-text-color: #2f3a47;
+  --box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
 /*BOOTSTRAP NAVBAR HEADER*/
@@ -159,6 +162,11 @@ p {
   padding: 50px 68px;
 }
 
+.pet-wireframe-desktop,
+.pet-wireframe-mobile {
+  box-shadow: var(--box-shadow);
+}
+
 /*USABILITY STUDY FINDINGS*/
 .usability-study-findings {
   margin-top: 80px;
@@ -233,9 +241,7 @@ p {
 }
 
 .slide-shadow {
-  box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
-    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
-    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  box-shadow: var(--box-shadow);
 }
 
 .carrots-slide-tablet {
