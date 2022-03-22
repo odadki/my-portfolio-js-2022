@@ -50,15 +50,9 @@
   margin: 0 auto;
   margin-bottom: 20px;
   position: relative;
-  max-width: 500px;
+  max-width: 100%;
 
   border-color: var(--sub-text-color);
-}
-
-.portfolio-img {
-  display: block;
-  max-width: 450px;
-  width: 100%;
 }
 
 .image-overlay,
@@ -84,6 +78,21 @@
   font-size: 30px;
 }
 
+.hover-list-title {
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.hover-list {
+  display: block;
+  font-size: 18px;
+  list-style: none;
+  text-align: center;
+}
+
 .image-overlay:hover,
 .image-overlay-dict:hover {
   opacity: 1;
@@ -94,20 +103,4 @@
 
 .projects-category {
   margin-top: 50px;
-}
-
-.carrots-img,
-.dictionary-img {
-  display: block;
-  text-align: center;
-  padding: 40px 40px;
-  border-radius: 9px;
-}
-
-.carrots-img {
-  max-width: 450px;
-}
-
-.dictionary-img {
-  max-width: 499.5px;
 }
