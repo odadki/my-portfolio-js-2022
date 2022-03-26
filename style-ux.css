@@ -1,6 +1,6 @@
 :root {
-  --header-font: "Julius Sans One", sans-serif;
-  --sub-font: "Sulphur Point", sans-serif;
+  --header-font: "Noto Serif", serif;
+  --sub-font: "M PLUS 1p", sans-serif;
   --sub-text-color: #5d6775;
   --hover-text: #cedaea;
   --hover-bg: #5e656d;
@@ -20,6 +20,18 @@
   font-size: 50px;
   margin-left: 50px;
   color: var(--hover-bg) !important;
+}
+
+.logo-img {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.logo-text {
+  font-size: 12px;
+  font-family: var(--sub-font);
+  color: var(--sub-text-color);
+  margin-left: 50px;
 }
 
 .navbar-nav {
@@ -45,7 +57,8 @@
 }
 
 .sr-only {
-  text-decoration: underline;
+  margin-bottom: 60px;
+  border-bottom: 1px solid currentColor;
 }
 
 /*BODY OF PAGE*/
@@ -54,6 +67,10 @@
 
 .container {
   font-family: var(--sub-font);
+}
+
+.title-text {
+  margin-top: 100px;
 }
 
 .title-info {
@@ -71,7 +88,7 @@ p {
 }
 
 .case-study {
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   font-size: 30px;
 }
 
@@ -309,6 +326,7 @@ p {
   font-family: var(--sub-font);
   color: var(--sub-text-color);
   margin-bottom: 70px;
+  font-size: 13px;
 }
 
 .footer-code-link:hover {

@@ -1,11 +1,14 @@
 :root {
-  --header-font: "Julius Sans One", sans-serif;
-  --sub-font: "Sulphur Point", sans-serif;
+  --header-font: "Noto Serif", serif;
+  --sub-font: "M PLUS 1p", sans-serif;
   --sub-text-color: #5d6775;
   --hover-text: #cedaea;
   --hover-bg: #5e656d;
   --project-bg: #ebf0f6;
   --darker-text-color: #2f3a47;
+  --box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
 /*BOOTSTRAP NAVBAR HEADER*/
@@ -17,6 +20,18 @@
   font-size: 50px;
   margin-left: 50px;
   color: var(--hover-bg) !important;
+}
+
+.logo-img {
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+.logo-text {
+  font-size: 12px;
+  font-family: var(--sub-font);
+  color: var(--sub-text-color);
+  margin-left: 50px;
 }
 
 .navbar-nav {
@@ -80,10 +95,11 @@
 
 .hover-list-title {
   display: block;
-  font-size: 20px;
+  font-size: 28px;
   margin-top: 20px;
+  margin-bottom: 28px;
   text-align: center;
-  text-decoration: underline;
+  font-family: var(--header-font);
 }
 
 .hover-list {
@@ -110,12 +126,17 @@
   margin-top: 50px;
 }
 
+.front-img {
+  box-shadow: var(--box-shadow);
+}
+
 /*FOOTER CODE*/
 .footer-code {
   font-family: var(--sub-font);
   color: var(--sub-text-color);
-  margin-top: 90px;
+  margin-top: 150px;
   margin-bottom: 70px;
+  font-size: 13px;
 }
 
 .footer-code-link:hover {
