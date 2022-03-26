@@ -38,7 +38,7 @@
   margin-left: auto;
   font-family: var(--sub-font);
   margin-right: 50px;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .nav-link {
@@ -368,6 +368,10 @@ p {
     font-size: 35px;
   }
 
+  .logo-text {
+    margin-left: 20px;
+  }
+
   .navbar-toggler {
     margin-right: 10px;
   }
@@ -429,6 +433,11 @@ p {
     margin-left: 22px;
   }
 
+  .logo-text {
+    margin-left: 20px;
+    font-size: 10px;
+  }
+
   .navbar-toggler-icon {
     max-width: 30px;
   }
@@ -456,7 +465,7 @@ p {
   .footer-code {
     margin-left: 18px;
     margin-right: 18px;
-    margin-top: 10px;
+    margin-top: 60px;
     font-size: 12px;
   }
 
