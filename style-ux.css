@@ -433,6 +433,10 @@ p {
     margin-left: 22px;
   }
 
+  .logo-img {
+    width: 80px;
+  }
+
   .logo-text {
     margin-left: 20px;
     font-size: 10px;
