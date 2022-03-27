@@ -83,20 +83,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   opacity: 0;
   transition: opacity 0.25s;
   font-family: var(--sub-font);
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .hover-list-title {
   display: block;
-  font-size: 28px;
-  margin-top: 20px;
+  font-size: 22px;
+  margin-top: 30px;
   margin-bottom: 28px;
   text-align: center;
   font-family: var(--header-font);
@@ -104,7 +100,7 @@
 
 .hover-list {
   display: block;
-  font-size: 18px;
+  font-size: 13px;
   list-style: none;
   text-align: center;
 }
@@ -151,7 +147,7 @@
     padding: 30px;
   }
   .navbar-brand {
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 35px;
   }
 
@@ -176,13 +172,59 @@
   }
 
   .hover-list-title {
-    font-size: 20px;
-    margin-top: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .hover-list {
     font-size: 12px;
     text-align: center;
+  }
+
+  .title-line {
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-list-title {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+
+  .hover-list {
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .title-line {
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+}
+
+@media (max-width: 576px) {
+  .hover-list-title {
+    display: block;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-bottom: 28px;
+    text-align: center;
+    font-family: var(--header-font);
+  }
+  .hover-list {
+    display: block;
+    font-size: 13px;
+    list-style: none;
+    text-align: center;
+  }
+  .title-line {
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-decoration: underline;
   }
 }
 @media (max-width: 414px) {
@@ -208,12 +250,17 @@
   }
 
   .hover-list-title {
-    font-size: 28px;
-    margin-top: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .image-overlay,
+  .image-overlay-dict {
+    font-size: 10px;
   }
 
   .hover-list {
-    font-size: 20px;
+    font-size: 13px;
     text-align: center;
   }
 
@@ -222,5 +269,10 @@
     margin-right: 18px;
     margin-top: 60px;
     font-size: 12px;
+  }
+
+  .title-line {
+    margin-bottom: 5px;
+    text-decoration: underline;
   }
 }
