@@ -106,7 +106,7 @@ p {
 .carrots-title-img {
   display: block;
   margin: 0 auto;
-  max-width: 900px;
+  width: 100%;
 }
 
 /*PROJECT OVERVIEW*/
