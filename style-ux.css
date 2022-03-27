@@ -414,13 +414,88 @@ p {
   }
 
   .title-text {
-    margin-top: 50px;
+    margin-top: 25px;
     margin-bottom: 10px;
     text-align: left !important;
   }
 
   .title-img {
     margin-top: 20px;
+  }
+
+  .case-study {
+    margin-bottom: 10px;
+  }
+
+  .project-overview-section,
+  .understand-user-section,
+  .persona-section,
+  .user-journey-map-section,
+  .paper-wireframe-section,
+  .digital-wireframe-section,
+  .refining-the-desgin,
+  .end-section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    font-size: 13px;
+  }
+
+  .project-overview-section h4,
+  .pain-points h4,
+  .paper-wireframe-section h3,
+  .digital-wireframe-section h3,
+  .round-findings h4,
+  .refining-the-desgin h3,
+  .mockups h3,
+  .accessibility-section h5,
+  .end-section h4 {
+    font-size: 17px;
+  }
+
+  .project-overview-title,
+  .understand-user-title,
+  .pain-points h2,
+  .persona-section h2,
+  .user-journey-map-section h2,
+  .paper-wireframe-section h2,
+  .refining-the-desgin h2,
+  .accessibility-section h3,
+  .refined-designs-section h3,
+  .hifi-prototype h3,
+  .end-section h2,
+  .end-section h3 {
+    font-size: 19px;
+  }
+
+  .understand-user-section {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+
+  .pain-point-individual {
+    padding-left: 0;
+    padding-right: 0;
+    border: none;
+    background-color: var(--project-bg);
+  }
+
+  .usability-study-findings {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .usability-study-title {
+    font-size: 17px;
+  }
+
+  .usability-study-findings p,
+  .findings,
+  .mockups p,
+  .accessibility-section p,
+  .hifi-prototype p {
+    font-size: 13px;
   }
 }
 
@@ -430,7 +505,7 @@ p {
   }
   .navbar-brand {
     font-size: 26px;
-    margin-left: 22px;
+    margin-left: 20px;
   }
 
   .logo-img {
@@ -447,7 +522,7 @@ p {
   }
 
   .title-text {
-    text-align: left !important;
+    margin-top: 20px;
   }
   .case-title {
     font-size: 20px;
@@ -455,6 +530,10 @@ p {
   .case-study,
   .case-desc {
     font-size: 14px;
+  }
+
+  .case-study {
+    margin-bottom: 8px;
   }
 
   .about-title {
