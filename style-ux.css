@@ -38,6 +38,7 @@
   font-family: var(--header-font);
   margin-right: 50px;
   font-size: 15px;
+  align-items: center !important;
 }
 
 .nav-link {

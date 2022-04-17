@@ -40,6 +40,7 @@
   font-family: var(--sub-font);
   margin-right: 50px;
   font-size: 15px;
+  align-items: center;
 }
 
 .nav-link {
@@ -66,7 +67,7 @@
 .home-all {
   border: 1px solid var(--sub-text-color);
   border-radius: 10px;
-
+  margin-top: 60px;
   padding-bottom: 100px;
 }
 
@@ -194,7 +195,6 @@
   font-family: var(--fourth-font);
   margin-bottom: 80px;
   margin-left: 18px;
-  border-left: 1px solid var(--hover-text);
 }
 
 .all-buttons {
@@ -217,12 +217,17 @@
   transition: 600ms;
 }
 
+.about-links {
+  display: block;
+}
+
 .email-section {
   margin-top: 40px;
 }
 
 .email-button,
-.linkedin-button {
+.linkedin-button,
+.github-button {
   text-decoration: none;
 }
 
@@ -239,8 +244,13 @@
   transition: 600ms;
 }
 
-.linkedin-section {
+.linkedin-section,
+.github-section {
   margin-top: 10px;
+}
+
+.github-icon {
+  width: 30px;
 }
 
 /*END ABOUT SECTION*/
@@ -294,6 +304,10 @@
     margin-top: 36px;
   }
 
+  .resume-button {
+    margin-top: 10px !important;
+  }
+
   .about-section {
     text-align: center;
   }
@@ -339,7 +353,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-left: none;
+    border-left: none !important;
     font-size: 16px;
   }
 
@@ -364,6 +378,7 @@
 
   .home-all {
     border: none;
+    margin-top: 45px;
   }
 
   .home-title {
@@ -396,6 +411,11 @@
   .about-paragraph-two {
     font-size: 16px;
   }
+
+  .footer-code {
+    margin-top: 300px;
+    margin-bottom: 2px !important;
+  }
 }
 
 @media (max-width: 414px) {
@@ -417,6 +437,7 @@
 
   .home-all {
     border: none;
+    margin-top: 32px;
   }
 
   .home-title {
@@ -449,8 +470,8 @@
   .footer-code {
     margin-left: 18px;
     margin-right: 18px;
-    margin-top: 60px;
-    font-size: 12px;
+    margin-top: 100px;
+    font-size: 10px;
   }
 
   .all-buttons {
