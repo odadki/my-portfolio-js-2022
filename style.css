@@ -59,10 +59,17 @@
 
 .sr-only {
   margin-bottom: 60px;
-  border-bottom: 1px solid currentColor;
+  border-bottom: 0.7px solid currentColor;
 }
 
 /*LANDING Homepage*/
+.home-all {
+  border: 1px solid var(--sub-text-color);
+  border-radius: 10px;
+
+  padding-bottom: 100px;
+}
+
 .home-title {
   font-family: var(--sub-font);
   font-size: 120px;
@@ -355,6 +362,10 @@
     margin-right: 5px;
   }
 
+  .home-all {
+    border: none;
+  }
+
   .home-title {
     margin-top: 50px;
     font-size: 70px;
@@ -402,6 +413,10 @@
 
   .logo-img {
     width: 80px;
+  }
+
+  .home-all {
+    border: none;
   }
 
   .home-title {
