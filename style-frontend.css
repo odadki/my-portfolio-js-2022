@@ -62,70 +62,23 @@
 }
 
 /*PORTFOLIO PAGE*/
-.image {
-  margin: 0 auto;
-  margin-bottom: 20px;
-  position: relative;
-  max-width: 100%;
 
-  border-color: var(--sub-text-color);
-}
-
-.image-overlay,
-.image-overlay-dict {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(94, 101, 109, 0.85);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.25s;
-  font-family: var(--sub-font);
-  font-size: 20px;
-}
-
-.hover-list-title {
-  display: block;
-  font-size: 22px;
-  margin-top: 30px;
-  margin-bottom: 28px;
-  text-align: center;
+.dictionary-button {
   font-family: var(--header-font);
+  color: black;
+  text-decoration: none;
+  padding: 10px 40px;
+  border: 1px solid black;
+  margin-top: 90px;
 }
 
-.hover-list {
-  display: block;
-  font-size: 13px;
-  list-style: none;
-  text-align: center;
+.dictionary-button:hover {
+  color: #ffffff;
+  background-color: var(--hover-bg);
+  border-color: var(--hover-bg);
+  transition: 600ms;
 }
-
-.image-overlay:hover,
-.image-overlay-dict:hover {
-  opacity: 1;
-}
-
-.title-line {
-  margin-bottom: 10px;
-  text-decoration: underline;
-}
-/*END PORTFOLIO PAGE*/
-
 /*PORTFOLIO IMAGES*/
-
-.projects-category {
-  margin-top: 50px;
-}
-
-.front-img {
-  box-shadow: var(--box-shadow);
-}
 
 /*FOOTER CODE*/
 .footer-code {
