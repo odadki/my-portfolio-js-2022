@@ -1,14 +1,17 @@
 :root {
   --header-font: "M PLUS 1p", sans-serif;
   --sub-font: "Pontano Sans", sans-serif;
+  --italic-font: "Playfair Display", serif;
   --sub-text-color: #5d6775;
   --hover-text: #cedaea;
   --hover-bg: #5e656d;
   --project-bg: #ebf0f6;
   --darker-text-color: #2f3a47;
+  --header-bg-color: #e5e5e5;
   --box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  --subtle-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 /*BOOTSTRAP NAVBAR HEADER*/
@@ -64,12 +67,14 @@
 /*PORTFOLIO PAGE*/
 
 .dictionary-button {
+  float: right;
   font-family: var(--header-font);
   color: black;
   text-decoration: none;
   padding: 10px 40px;
   border: 1px solid black;
-  margin-top: 90px;
+  background-color: white;
+  box-shadow: var(--subtle-box-shadow);
 }
 
 .dictionary-button:hover {
@@ -78,7 +83,48 @@
   border-color: var(--hover-bg);
   transition: 600ms;
 }
-/*PORTFOLIO IMAGES*/
+
+.dictionary-title {
+  font-family: var(--header-font);
+  margin-bottom: 22px;
+}
+
+.dictionary-tools {
+  font-family: var(--sub-font);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--sub-text-color);
+}
+
+.dictionary-summary {
+  font-family: var(--sub-font);
+  font-size: 15px;
+}
+
+.frontend-header {
+  border-radius: 10px;
+  padding: 30px;
+  background-color: var(--header-bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.dictionary-video {
+  width: 100% !important;
+  height: auto;
+  border: 0.5 solid var(--sub-text-color) !important;
+}
+
+.dictionary-project-details {
+  font-family: var(--italic-font);
+  font-size: 2em;
+}
+
+.dictionary-list {
+  font-family: var(--header-font);
+  padding-left: 150px;
+  padding-right: 105px;
+  line-height: 28px;
+}
 
 /*FOOTER CODE*/
 .footer-code {
