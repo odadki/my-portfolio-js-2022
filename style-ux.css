@@ -1,6 +1,7 @@
 :root {
   --header-font: "M PLUS 1p", sans-serif;
   --sub-font: "Pontano Sans", sans-serif;
+  --italic-font: "Playfair Display", serif;
   --sub-text-color: #5d6775;
   --hover-text: #cedaea;
   --hover-bg: #5e656d;
@@ -66,7 +67,7 @@
 /*TITLE AND TITLE IMAGE*/
 
 .container {
-  font-family: var(--sub-font);
+  font-family: var(--header-font);
 }
 
 .title-text {
@@ -90,6 +91,8 @@ p {
 .case-study {
   margin-bottom: 60px;
   font-size: 30px;
+  text-transform: uppercase;
+  font-family: var(--header-font);
 }
 
 .case-desc {
@@ -107,6 +110,18 @@ p {
   display: block;
   margin: 0 auto;
   width: 100%;
+}
+
+/*TEXT ITALICS HEADER*/
+.text-italic {
+  font-size: 50px;
+  font-family: var(--italic-font);
+}
+
+/*UPDATE ALL HEADERS TO "ALL CAPS"*/
+.all-caps-title {
+  text-transform: uppercase;
+  font-family: var(--header-font);
 }
 
 /*PROJECT OVERVIEW*/
@@ -131,7 +146,7 @@ p {
 }
 
 .understand-user-title {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .pain-points {
@@ -294,6 +309,7 @@ p {
 
 /*FOOTER*/
 .footer-link {
+  font-family: var(--header-font);
   padding: 24px;
 }
 
@@ -310,14 +326,12 @@ p {
 }
 
 .footer-link .active {
-  text-decoration: underline;
-}
-
-.footer-link .active a:hover {
-  color: red !important;
+  margin-bottom: 60px;
+  border-bottom: 1px solid currentColor;
 }
 
 .footer-all {
+  margin-top: 150px;
   margin-bottom: 70px;
 }
 
@@ -406,6 +420,12 @@ p {
     display: inline-block;
     margin: 0 auto;
     text-align: center;
+  }
+  .footer-all {
+    margin-top: 80px;
+  }
+  .footer-link {
+    margin-bottom: 80px;
   }
 }
 
@@ -558,6 +578,14 @@ p {
     font-size: 15px;
   }
 
+  .footer-all {
+    margin-top: 50px;
+  }
+
+  .footer-link {
+    padding-bottom: 80px !important;
+  }
+
   .footer-code {
     margin-left: 18px;
     margin-right: 18px;
@@ -620,5 +648,12 @@ p {
 
   .navbar-toggler {
     margin-right: 12px;
+  }
+
+  .footer-code {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 60px;
+    font-size: 10px;
   }
 }
