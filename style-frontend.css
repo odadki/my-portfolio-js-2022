@@ -11,6 +11,8 @@
   --box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  --header-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   --subtle-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
@@ -71,7 +73,7 @@
   font-family: var(--header-font);
   color: black;
   text-decoration: none;
-  padding: 10px 40px;
+  padding: 10px 25px;
   border: 1px solid black;
   background-color: white;
   box-shadow: var(--subtle-box-shadow);
@@ -122,10 +124,9 @@
 }
 
 .frontend-header {
-  border-radius: 10px;
   padding: 30px;
-  background-color: var(--header-bg-color);
-  box-shadow: var(--box-shadow);
+  background-color: var(--project-bg);
+  box-shadow: var(--header-box-shadow);
 }
 
 .dictionary-video {
@@ -235,6 +236,10 @@
     text-align: center;
   }
 
+  .dictionary-details-all {
+    border: none;
+  }
+
   .title-line {
     margin-bottom: 5px;
     text-decoration: underline;
@@ -276,7 +281,9 @@
     font-size: 8px;
     text-align: center;
   }
-
+  .dictionary-details-all {
+    border: none;
+  }
   .title-line {
     margin-bottom: 5px;
     text-decoration: underline;
@@ -330,12 +337,22 @@
 
   .frontend-header {
     align-items: center !important;
-    text-align: center !important;
     padding-bottom: 18px;
   }
 
   .dictionary-title {
     font-size: 24px;
+  }
+
+  .dictionary-button {
+    font-size: 14px;
+    font-family: var(--header-font);
+    color: black;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: var(--subtle-box-shadow);
   }
 
   .dictionary-button-two {
@@ -352,7 +369,9 @@
   .dictionary-summary {
     font-size: 14px;
   }
-
+  .dictionary-details-all {
+    border: none;
+  }
   .dictionary-project-details {
     font-size: 20px;
   }
@@ -369,6 +388,16 @@
 
   .footer-link {
     padding-bottom: 80px !important;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 575px) {
+  .frontend-header {
+    text-align: center;
+  }
+
+  .dictionary-details-all {
+    border: none;
   }
 }
 
@@ -407,6 +436,10 @@
     text-align: center;
   }
 
+  .dictionary-details-all {
+    border: none;
+  }
+
   .footer-code {
     margin-left: 18px;
     margin-right: 18px;
@@ -422,6 +455,7 @@
   .frontend-header {
     text-align: center;
     padding-bottom: 12px;
+    border-radius: 0;
   }
 
   .dictionary-title {

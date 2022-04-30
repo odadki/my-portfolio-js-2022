@@ -7,6 +7,7 @@
   --hover-text: #cedaea;
   --hover-bg: #5e656d;
   --project-bg: #ebf0f6;
+  --header-bg-color: #f2f2f2;
   --darker-text-color: #2f3a47;
   --box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
@@ -121,7 +122,7 @@
   font-size: 18px;
 }
 .card-body {
-  background-color: #e5e5e5;
+  background-color: var(--header-bg-color);
 }
 .card-text {
   color: var(--sub-text-color);
