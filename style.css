@@ -3,15 +3,18 @@
   --sub-font: "M PLUS 1p", sans-serif;
   --third-font: "Urbanist", sans-serif;
   --fourth-font: "Pontano Sans", sans-serif;
+  --italic-font: "Playfair Display", serif;
   --sub-text-color: #5d6775;
   --hover-text: #cedaea;
   --hover-bg: #5e656d;
   --project-bg: #ebf0f6;
   --header-bg-color: #f2f2f2;
   --darker-text-color: #2f3a47;
+  --white-opaque: rgba(255, 255, 255, 0.6);
   --box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+  --subtle-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 /*BOOTSTRAP NAVBAR HEADER*/
@@ -65,6 +68,37 @@
 }
 
 /*LANDING Homepage*/
+.hero-one {
+  width: 100%;
+}
+
+.hero-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-info {
+  font-family: var(--sub-font);
+  font-size: 19px;
+  font-weight: bold;
+  position: absolute;
+  z-index: 999;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 65%; /* Adjust this value to move the positioned div up and down */
+  text-align: center;
+  width: 60%; /* Set the width of the positioned div */
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+.hero-title {
+  font-family: var(--sub-font);
+  text-shadow: 1px 1px 3px black;
+  font-size: 40px;
+}
+
 .home-all {
   border: 1px solid var(--sub-text-color);
   border-radius: 10px;
@@ -79,24 +113,32 @@
 }
 
 .home-paragraph {
-  font-family: var(--fourth-font);
+  font-family: var(--sub-font);
   color: var(--sub-text-color);
   margin-top: 40px;
   margin-bottom: 60px;
+}
+
+.hero-button {
+  margin-top: 60px;
 }
 
 .resume-button-home {
   font-family: var(--sub-font);
   color: black;
   text-decoration: none;
-  padding: 10px 40px;
-  border: 1px solid black;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: none;
+  padding: 10px 30px;
+  border: 4px solid white;
+  background-color: var(--white-opaque);
+  box-shadow: var(--subtle-box-shadow);
 }
 
 .resume-button-home:hover {
-  color: #ffffff;
-  background-color: var(--hover-bg);
-  border-color: var(--hover-bg);
+  color: var(--sub-text-color);
+  border-color: white;
   transition: 600ms;
 }
 
@@ -147,11 +189,11 @@
 
 /*ABOUT ME*/
 .about-me-all {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 .about-title {
-  font-family: var(--sub-font);
+  font-family: var(--italic-font);
   font-weight: bold;
   font-size: 50px;
   margin-left: 18px;
@@ -241,7 +283,7 @@
 .footer-code {
   font-family: var(--fourth-font);
   color: var(--sub-text-color);
-  margin-top: 260px;
+  margin-top: 50px;
   margin-bottom: 70px;
   font-size: 10px;
 }
@@ -252,6 +294,96 @@
 }
 
 /*MEDIA QUERIES*/
+
+@media (min-width: 1312px) and (max-width: 1645px) {
+  .hero-title {
+    font-size: 34px;
+  }
+  .hero-info {
+    font-size: 17px;
+  }
+  .hero-button {
+    margin-top: 38px;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 26px;
+    border: 4px solid white;
+    background-color: var(--white-opaque);
+    box-shadow: var(--subtle-box-shadow);
+  }
+
+  .resume-button-home:hover {
+    color: var(--sub-text-color);
+    border-color: white;
+    transition: 600ms;
+  }
+}
+
+@media (min-width: 1162px) and (max-width: 1311px) {
+  .hero-title {
+    font-size: 32px;
+  }
+  .hero-info {
+    font-size: 16px;
+  }
+  .hero-button {
+    margin-top: 32px;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 7px 25px;
+    border: 4px solid white;
+    background-color: var(--white-opaque);
+    box-shadow: var(--subtle-box-shadow);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1161px) {
+  .hero-title {
+    font-size: 30px;
+  }
+
+  .hero-info {
+    font-family: var(--sub-font);
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 58%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .hero-button {
+    margin-top: 30px;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 6px 22px;
+    border: 4px solid white;
+    margin-top: 10px;
+    background-color: var(--white-opaque);
+    box-shadow: var(--subtle-box-shadow);
+  }
+}
 
 @media (min-width: 821px) and (max-width: 991px) {
   .navbar {
@@ -297,6 +429,43 @@
   .email-linkedin-link {
     align-items: left;
   }
+
+  /*HERO HOME PAGE ITEMS*/
+  .hero-title {
+    font-size: 27px;
+  }
+
+  .hero-info {
+    font-family: var(--sub-font);
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 58%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .hero-button {
+    margin-top: 26px;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px 17px;
+    border: 4px solid white;
+    margin-top: 10px;
+    background-color: var(--white-opaque);
+    box-shadow: var(--subtle-box-shadow);
+  }
 }
 
 @media (min-width: 768px) and (max-width: 820px) {
@@ -340,7 +509,44 @@
   }
 
   .about-title {
-    font-size: 30px;
+    font-size: 46px;
+    margin-top: 20px;
+  }
+
+  /*HERO HOME PAGE ITEMS*/
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-info {
+    font-family: var(--sub-font);
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 58%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .hero-button {
+    margin-top: 20px;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px 16px;
+    border: 4px solid white;
+    margin-top: 10px;
+    background-color: var(--white-opaque);
   }
 }
 
@@ -384,9 +590,10 @@
   }
 
   .about-title {
-    font-size: 30px;
+    font-size: 42px;
     text-align: center !important;
-    margin-top: 30px !important;
+    margin-top: 22px !important;
+    margin-bottom: 20px;
   }
 
   .about-paragraph,
@@ -395,12 +602,141 @@
   }
 
   .footer-code {
-    margin-top: 300px;
+    margin-top: 50px;
     margin-bottom: 2px !important;
   }
 }
 
-@media (max-width: 414px) {
+@media (min-width: 643px) and (max-width: 767px) {
+  /*HERO HOME PAGE ITEMS*/
+  .hero-title {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .hero-info {
+    font-family: var(--sub-font);
+    font-size: 13px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 60%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .hero-button {
+    margin-top: 17px;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 4px 15px;
+    border: 3px solid white;
+    margin-top: 10px;
+    background-color: var(--white-opaque);
+  }
+}
+
+@media (min-width: 486px) and (max-width: 642px) {
+  /*HERO HOME PAGE ITEMS*/
+  .hero-title {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+
+  .hero-info {
+    font-family: var(--sub-font);
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 54%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .hero-button {
+    margin-top: 2px !important;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 2px 12px;
+    border: 2px solid white;
+    margin-top: 10px;
+    background-color: var(--white-opaque);
+  }
+
+  .footer-code {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 50px;
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 415px) and (max-width: 485px) {
+  /*HERO HOME PAGE ITEMS*/
+  .hero-title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .hero-info {
+    font-family: var(--sub-font);
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 54%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .hero-paragraph {
+    margin-bottom: 10px;
+  }
+
+  .hero-button {
+    margin-top: 1px !important;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 1px 12px;
+    border: 2px solid white;
+    margin-top: 0px !important;
+    background-color: var(--white-opaque);
+  }
+}
+
+@media (min-width: 376px) and (max-width: 414px) {
   .navbar {
     padding: 12px 0 12px 0;
   }
@@ -437,7 +773,7 @@
     text-align: center;
   }
   .about-title {
-    font-size: 26px;
+    font-size: 36px;
   }
 
   .about-section,
@@ -452,13 +788,129 @@
   .footer-code {
     margin-left: 18px;
     margin-right: 18px;
-    margin-top: 100px;
-    font-size: 10px;
+    margin-top: 50px;
+    font-size: 8px;
   }
 
   .all-buttons {
     margin-top: 0;
     display: block;
     text-align: center;
+  }
+
+  /*HERO HOME PAGE ITEMS*/
+  .hero-title {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+
+  .hero-info {
+    font-family: var(--sub-font);
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 52%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    margin-bottom: 0;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .hero-paragraph {
+    margin-bottom: 10px;
+  }
+
+  .hero-button {
+    margin-top: 0 !important;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 9px;
+    padding: 0px 8px;
+    border: 2px solid white;
+    margin-top: 0px !important;
+    background-color: var(--white-opaque);
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    padding: 12px 0 12px 0;
+  }
+  .navbar-brand {
+    font-size: 26px;
+    margin-left: 12px;
+  }
+
+  .navbar-toggler {
+    margin-right: 12px;
+  }
+  .about-container {
+    text-align: center;
+  }
+
+  .about-title {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  .logo-img {
+    width: 80px;
+  }
+
+  .footer-code {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 50px;
+    font-size: 7px;
+  }
+
+  /*HERO HOME PAGE ITEMS*/
+  .hero-title {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .hero-info {
+    font-family: var(--sub-font);
+    font-size: 8px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .hero-paragraph {
+    margin-bottom: 6px;
+  }
+
+  .hero-button {
+    margin-top: 0 !important;
+  }
+  .resume-button-home {
+    font-family: var(--sub-font);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 8px;
+    padding: 0px 8px;
+    border: 1px solid white;
+    margin-top: 0px;
+    background-color: var(--white-opaque);
   }
 }
