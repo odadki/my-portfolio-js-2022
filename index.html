@@ -45,7 +45,8 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- NAVBAR -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light">
       <div>
         <a class="navbar-brand" href="/"
           ><img src="../img/doda-logo.png" class="logo-img"
@@ -82,20 +83,151 @@
         </ul>
       </div>
     </nav>
-    <div class="hero-container">
-      <!-- ADD TEST NOTE -->
-      <img src="../img/hero-one-copy.png" class="hero-one" />
-      <div class="hero-info text-center">
-        <h1 class="hero-title">Hi, I'm Danielle</h1>
-        <p class="hero-paragraph">A UX Designer and Engineer from Hawai'i</p>
-        <div class="text-center hero-button">
-          <a href="../pages/portfolio.html" class="resume-button-home">
-            PORTFOLIO
-          </a>
+    <!-- HOME CONTENT -->
+    <div class="hero-container container text-center">
+      <!-- <img src="../img/hero-one-copy.png" class="hero-one" /> -->
+      <div class="hero-info row">
+        <div class="col-lg-12">
+            <div class="hero-desc">
+              <h1 class="hero-title">Hello, I'm Danielle</h1>
+              <p class="hero-paragraph">
+                A Front End Developer with UX Design chops 
+                <br />
+                <p class="hero-paragraph">who loves
+                <span class="text-animation"></span></p>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12 d-flex justify-content-center">
+            <div class="hero-buttons-all">
+              <div class="hero-button">
+                <a href="../pages/portfolio.html" class="resume-button-home hero-button-portfolio">
+                  PORTFOLIO
+                </a>
+              </div>
+              <div class="hero-button">
+                <a
+                  href="../pages/portfolio.html"
+                  class="resume-button-home hero-button-contact"
+                >
+                  CONTACT ME
+                </a>
+              </div>
+            </div>
+          </div>
+        <!-- <div class="col-lg-6">
+          <img class="home-img-july" src="img/home-img-july.png" />
+        </div> -->
+      </div>
+    </div>
+    <div class="horizontal-line"></div>
+
+    <!-- ABOUT SECTION ------------------------------------------------------------------>
+    <div class="d-flex justify-content-center about-me-all">
+      <div class="container about-container">
+        <h3 class="about-header">ABOUT</h3>
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <span
+              ><img src="../img/home-img-july.png" class="img-fluid bio-pic"
+            /></span>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 about-section">
+            <h3 class="about-title">A little bit about me...</h3>
+            <p class="about-paragraph mt-3">
+              <em
+                >I'm a UX Designer and Engineer who enjoys creating clean &
+                user-friendly designs and building the code to bring those
+                products to life!</em
+              >
+            </p>
+            <p class="about-paragraph-two mt-4">
+              Having spent much of my time in music teaching and music business,
+              I am equipped with strong communication skills, a highly creative
+              eye, and a strong ability to empathize. Within all my prior work
+              experiences, I have learned the importance of listening to
+              clients, understanding their needs and acting upon that knowledge
+              to create my best work. After completing an intense UX Design and
+              Front-End certification program, I’m excited to continue my
+              journey in empathizing with users and building functional design
+              solutions that have accessibility needs in mind.
+            </p>
+            <div class="all-buttons">
+              <div>
+                <a
+                  href="../img/ux-resume.pdf"
+                  class="resume-button"
+                  target="_blank"
+                >
+                  RESUME
+                </a>
+              </div>
+              <div class="row about-links">
+                <div class="email-linkedin-link">
+                  <div class="email-section">
+                    <span>
+                      <a
+                        href="mailto:odadaniellek@gmail.com"
+                        class="email-button"
+                        ><img
+                          src="../img/iconmonstr-email-11.svg"
+                          class="email-icon"
+                        />
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        href="mailto:hello.danielleoda@gmail.com"
+                        class="website-link"
+                        target="__blank"
+                        >hello.danielleoda@gmail.com</a
+                      >
+                    </span>
+                  </div>
+                  <div class="linkedin-section">
+                    <span>
+                      <a href="#" class="linkedin-button"
+                        ><img
+                          src="../img/iconmonstr-linkedin-5.svg"
+                          class="linkedin-icon"
+                        />
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        href="https://www.linkedin.com/in/danielle-oda-492066221/"
+                        class="website-link"
+                        target="__blank"
+                        >linkedin profile</a
+                      >
+                    </span>
+                  </div>
+                  <div class="github-section">
+                    <span>
+                      <a href="#" class="github-button"
+                        ><img
+                          src="../img/iconmonstr-github-5.svg"
+                          class="github-icon"
+                        />
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        href="https://github.com/odadki"
+                        class="website-link"
+                        target="__blank"
+                        >github</a
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
+    <!-- FOOTER -->
     <footer class="footer-code">
       <div class="text-center">
         This page is
@@ -123,5 +255,7 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
   </body>
 </html>
