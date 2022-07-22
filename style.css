@@ -230,7 +230,7 @@ body {
   margin-left: 18px;
 }
 
-.about-link {
+/* .about-link {
   text-decoration: none;
   color: #d30c7d;
 }
@@ -239,7 +239,7 @@ body {
   transition: 600ms;
   color: #e8f4f7;
   background-color: #d30c7d;
-}
+} */
 
 .all-buttons {
   margin-left: 20px;
@@ -312,11 +312,11 @@ body {
 }
 
 .portfolio-img-update-mobile {
-  width: 400px;
+  width: 600px;
 }
 
 .portfolio-button {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   color: #d30c7d;
   text-decoration: none;
   position: relative;
@@ -453,15 +453,15 @@ body {
 
 @media (min-width: 1312px) and (max-width: 1645px) {
   .hero-title {
-    font-size: 34px;
+    font-size: 4rem;
   }
-  .hero-info {
+  /* .hero-info {
     font-size: 17px;
-  }
+  } */
   .hero-button {
     margin-top: 38px;
   }
-  .resume-button-home {
+  /* .resume-button-home {
     font-family: var(--sub-font);
     color: black;
     text-decoration: none;
@@ -471,18 +471,18 @@ body {
     border: 4px solid white;
     background-color: var(--white-opaque);
     box-shadow: var(--subtle-box-shadow);
-  }
+  } */
 
-  .resume-button-home:hover {
+  /* .resume-button-home:hover {
     color: var(--sub-text-color);
     border-color: white;
     transition: 600ms;
-  }
+  } */
 }
 
 @media (min-width: 1162px) and (max-width: 1311px) {
   .hero-title {
-    font-size: 32px;
+    font-size: 3.6rem;
   }
   .hero-info {
     font-size: 16px;
