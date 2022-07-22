@@ -1,6 +1,6 @@
 var options = {
   strings: [
-    "hiking 🌿",
+    "^3000 hiking 🌿",
     "spending time with family ❤️",
     "watching horror movies 👻",
     "writing music 🎶",
