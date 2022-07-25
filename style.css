@@ -557,34 +557,43 @@ body {
   .hero-button {
     margin-top: 10px !important;
     margin-bottom: 20px;
+    text-align: center;
   }
   .resume-button-home {
     font-size: 17px;
     padding: 9px 21px;
+    margin-left: 0;
   }
 
   .about-header {
     margin-bottom: 28px;
   }
 
+  .about-container {
+    align-items: center;
+  }
   .about-title {
-    font-size: 28px;
     margin-top: 20px;
+    text-align: center;
+  }
+  .hero-button {
+    margin-top: 26px;
   }
 
   .about-paragraph {
-    font-size: 20px;
     margin-left: 0 !important;
+    text-align: center;
   }
   .about-paragraph-two {
-    font-size: 16px;
     margin-left: 0 !important;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .all-buttons {
     margin-left: 0;
   }
+
   .portfolio-individual-text {
     text-align: center;
     align-items: center;
@@ -629,6 +638,7 @@ body {
   .resume-button-home {
     font-size: 17px;
     padding: 9px 21px;
+    margin-left: 0;
   }
 
   .about-header {
@@ -638,24 +648,23 @@ body {
   .about-title {
     font-size: 28px;
     margin-top: 20px;
+    text-align: center;
   }
 
   .about-paragraph {
     font-size: 20px;
     margin-left: 0 !important;
+    text-align: center;
   }
   .about-paragraph-two {
     font-size: 16px;
     margin-left: 0 !important;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .all-buttons {
     margin-left: 0;
-  }
-  .resume-button-home {
-    font-size: 17px;
-    padding: 9px 21px;
   }
 
   .portfolio-individual-text {
@@ -703,6 +712,7 @@ body {
   .resume-button-home {
     font-size: 17px;
     padding: 9px 21px;
+    margin-left: 0;
   }
 
   .about-header {
@@ -712,16 +722,19 @@ body {
   .about-title {
     font-size: 28px;
     margin-top: 20px;
+    text-align: center;
   }
 
   .about-paragraph {
     font-size: 20px;
     margin-left: 0 !important;
+    text-align: center;
   }
   .about-paragraph-two {
     font-size: 16px;
     margin-left: 0 !important;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .all-buttons {
@@ -779,6 +792,7 @@ body {
   .resume-button-home {
     font-size: 14px;
     padding: 7px 18px;
+    margin-left: 0;
   }
 
   .about-header {
@@ -791,16 +805,19 @@ body {
   .about-title {
     font-size: 28px;
     margin-top: 20px;
+    text-align: center;
   }
 
   .about-paragraph {
     font-size: 20px;
     margin-left: 0 !important;
+    text-align: center;
   }
   .about-paragraph-two {
     font-size: 16px;
     margin-left: 0 !important;
     margin-bottom: 40px;
+    text-align: center;
   }
 
   .footer-code {
@@ -871,6 +888,7 @@ body {
   .about-title {
     font-size: 28px;
     margin-top: 20px;
+    text-align: center;
   }
 
   .about-paragraph {
@@ -926,6 +944,7 @@ body {
   .resume-button-home {
     font-size: 14px;
     padding: 7px 18px;
+    margin-left: 0;
   }
 
   .portfolio-each-project {
@@ -969,6 +988,7 @@ body {
   .about-title {
     font-size: 26px;
     margin-top: 20px;
+    text-align: center;
   }
 
   .about-paragraph {
@@ -1023,6 +1043,7 @@ body {
   .resume-button-home {
     font-size: 14px;
     padding: 7px 18px;
+    margin-left: 0;
   }
 
   .portfolio-each-project {
