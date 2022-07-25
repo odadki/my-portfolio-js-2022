@@ -398,6 +398,28 @@ body {
   transition: 600ms;
 } */
 
+/* -----------------------------------------------------------------------------CONTACT */
+.form-input {
+  margin-bottom: 10px;
+}
+
+.contact-submit-button {
+  background-color: transparent;
+}
+
+.form-control {
+  border: 1px solid gray;
+}
+
+.form-control:focus {
+  outline: 1.5px solid red;
+}
+/* ADDS CLASS WHEN BUTTON IS CLICKED */
+.contact-notification-class-success {
+  color: green;
+  margin-bottom: 20px;
+}
+
 /*---------------------------------------------------------------------------------HOME */
 
 .contact-all {
@@ -426,7 +448,7 @@ body {
   transition: 600ms;
 }
 
-/*MEDIA QUERIES*/
+/*-----------------------------------------------------------------------------------MEDIA QUERIES*/
 
 @media (min-width: 1312px) and (max-width: 1645px) {
   .hero-button {
