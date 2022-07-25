@@ -649,46 +649,64 @@
     <div id="contact-id" class="contact-all">
       <div class="container">
         <h3 class="about-header">CONTACT</h3>
-        <form
-          target="_blank"
-          action="https://formsubmit.co/hello.danielleoda@gmail.com"
-          method="POST"
-        >
-          <div class="form-group">
-            <div class="form-row">
-              <div class="col">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  placeholder="Full Name"
-                  required
-                />
+        <h3 class="about-title text-center mb-5">Connect with me!</h3>
+        <input type="hidden" name="_subject" value="New submission!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <div class="row contact-submission-form">
+          <div class="col-xl-6">
+            <form
+              target="_blank"
+              action="https://formsubmit.co/hello.danielleoda@gmail.com"
+              method="POST"
+              id="form-id"
+            >
+              <div class="row form-group">
+                <div class="form-row">
+                  <div class="form-input col">
+                    <input
+                      id="name-id"
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      placeholder="Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-input col">
+                    <input
+                      id="email-id"
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="col">
-                <input
-                  type="email"
-                  name="email"
+              <div class="form-input form-group">
+                <textarea
+                  id="message-id"
+                  placeholder="Message"
                   class="form-control"
-                  placeholder="Email Address"
+                  name="message"
+                  rows="10"
                   required
-                />
+                ></textarea>
               </div>
-            </div>
+              <div
+                id="contact-notification"
+                class="contact-notification-class-success contact-notification-class-fail"
+              ></div>
+              <button
+                type="submit"
+                class="contact-submit-button resume-button-home hero-button-portfolio"
+              >
+                SUBMIT
+              </button>
+            </form>
           </div>
-          <div class="form-group">
-            <textarea
-              placeholder="Your Message"
-              class="form-control"
-              name="message"
-              rows="10"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-lg btn-dark btn-block">
-            Submit Form
-          </button>
-        </form>
+        </div>
       </div>
     </div>
     <!-- FOOTER -------------------------------------------------------------------------------->
