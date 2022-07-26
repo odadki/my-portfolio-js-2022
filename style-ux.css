@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
 :root {
-  --header-font: "M PLUS 1p", sans-serif;
-  --sub-font: "Pontano Sans", sans-serif;
+  --header-font: "Crimson Text", serif;
+  --sub-font: "Poppins", sans-serif;
   --italic-font: "Playfair Display", serif;
   --sub-text-color: #5d6775;
   --hover-text: #cedaea;
@@ -12,6 +15,9 @@
     0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
+body {
+  font-family: var(--sub-font) !important;
+}
 /*BOOTSTRAP NAVBAR HEADER*/
 .navbar {
   padding: 50px;
@@ -68,18 +74,26 @@
 
 .container {
   font-family: var(--header-font);
+  width: 100% !important;
+  margin: 0 auto !important;
+  align-items: center !important;
 }
 
-.title-text {
+.title-container {
   margin-top: 100px;
+}
+.title-text {
+  margin-top: 150px;
 }
 
 .title-info {
   text-align: center;
+  font-family: var(--sub-font);
 }
 
 .title-text h3,
 p {
+  font-family: var(--sub-font);
   color: var(--sub-text-color);
 }
 
@@ -96,7 +110,6 @@ p {
 }
 
 .case-desc {
-  font-style: italic;
   font-size: 20px;
 }
 
@@ -120,7 +133,7 @@ p {
 
 /*UPDATE ALL HEADERS TO "ALL CAPS"*/
 .all-caps-title {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: var(--header-font);
 }
 
@@ -669,7 +682,7 @@ p {
 }
 
 @media (max-width: 414px) {
-  .navbar {
+  /* .navbar {
     padding: 12px 0 12px 0;
   }
   .navbar-brand {
@@ -682,7 +695,14 @@ p {
   }
 
   .container {
-    text-align: center !important;
+    font-family: var(--header-font);
+    width: 100% !important;
+    margin: 0 auto !important;
+    align-items: center !important;
+  }
+
+  .project-overview-media {
+    padding: 0 !important;
   }
 
   .petconnect-title {
@@ -694,5 +714,226 @@ p {
     margin-right: 18px;
     margin-top: 60px;
     font-size: 10px;
+  } */
+
+  .container {
+    text-align: center !important;
+    margin: 0 auto !important;
+    align-items: center !important;
+  }
+
+  .title-text {
+    margin-top: 20px;
+  }
+  .case-title {
+    font-size: 20px;
+  }
+
+  .petconnect-title {
+    font-size: 38px !important;
+  }
+  .case-study,
+  .case-desc {
+    font-size: 14px;
+  }
+
+  .case-study {
+    margin-bottom: 8px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-section,
+  .about-paragraph {
+    font-size: 15px;
+  }
+
+  .footer-all {
+    margin-top: 50px;
+  }
+
+  .footer-link {
+    padding-bottom: 80px !important;
+  }
+
+  .footer-code {
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 60px;
+    font-size: 12px;
+  }
+
+  .persona-section,
+  .user-journey-map-section,
+  .paper-wireframe-section,
+  .digital-wireframe-section,
+  .usability-study-findings,
+  .mockups,
+  .accessibility-section,
+  .refined-designs-section,
+  .hifi-prototype {
+    margin-top: 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    margin-bottom: 40px;
+  }
+
+  .project-overview-section {
+    padding-bottom: 2px;
+  }
+
+  .understand-user-section {
+    padding-bottom: 2px;
+  }
+
+  .bio-pic {
+    display: block !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+
+  .about-title {
+    text-align: center !important;
+    margin-top: 30px !important;
+  }
+
+  .title-text {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    text-align: left !important;
+  }
+
+  .title-img {
+    margin-top: 20px;
+  }
+
+  .case-study {
+    margin-bottom: 10px;
+  }
+
+  .project-overview-section,
+  .understand-user-section,
+  .persona-section,
+  .user-journey-map-section,
+  .digital-wireframe-section,
+  .refining-the-desgin,
+  .end-section {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 20px;
+    font-size: 13px;
+  }
+
+  .project-overview-section h4,
+  .pain-points h4,
+  .paper-wireframe-section h3,
+  .digital-wireframe-section h3,
+  .round-findings h4,
+  .refining-the-desgin h3,
+  .mockups h3,
+  .accessibility-section h5,
+  .end-section h4 {
+    font-size: 19px;
+  }
+
+  .project-overview-title,
+  .pain-points h2,
+  .persona-section h2,
+  .user-journey-map-section h2,
+  .accessibility-section h3,
+  .refined-designs-section h3,
+  .hifi-prototype h3 {
+    font-size: 19px;
+  }
+
+  .project-overview-title {
+    margin-bottom: 14px;
+  }
+
+  .text-italic {
+    font-size: 30px;
+  }
+
+  .understand-user-section {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .pain-point-title {
+    margin-bottom: 0 !important;
+  }
+
+  .pain-point-paragraph {
+    margin-bottom: 2px !important;
+    padding-bottom: 2px !important;
+  }
+
+  .pain-point-individual {
+    padding-left: 0;
+    padding-right: 0;
+
+    border: none;
+    background-color: var(--project-bg);
+  }
+
+  .usability-study-findings {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .usability-study-title {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .usability-study-findings p,
+  .findings,
+  .mockups p,
+  .accessibility-section p,
+  .hifi-prototype p {
+    font-size: 13px;
+  }
+
+  .round-findings {
+    padding-left: 1px;
+    padding-right: 1px;
+    text-align: left;
+  }
+
+  .takeaway-paragraph {
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .takeaways {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .next-steps {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .pet-next-steps {
+    font-size: 15px !important;
+  }
+
+  .boutiqute-title {
+    font-size: 35px !important;
+  }
+
+  .project-overview-title {
+    font-size: 22px;
   }
 }
