@@ -20,17 +20,23 @@
   --subtle-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   --crimson-text: "Crimson Text", serif;
   --dark-green: #023f28;
+  /* NEW COLORS */
+  --background-color: #e6eaf4;
+  --text-color: #404156;
+  --light-blue: #a1d2ea;
+  --light-purple: #cebef6;
+  --blue-purple: #36299e;
 }
 
 body {
   font-family: var(--sub-font);
-  background: #e8f4f7;
-  color: #2a2438;
+  background: #e6eaf4;
+  color: #404156;
 }
 
 .bold {
   font-weight: 700;
-  color: #d30c7d;
+  color: #36299e;
 }
 
 .gray {
@@ -167,11 +173,11 @@ body {
 .hero-button-contact {
   margin-left: 8px;
   color: #dbd8e3 !important;
-  background-color: #2a2438;
+  background-color: var(--text-color);
 }
 
 .hero-button-contact:hover {
-  color: #2a2438 !important;
+  color: var(--text-color) !important;
   background-color: #dbd8e3;
   transition: 600ms;
 }
@@ -185,7 +191,7 @@ body {
 .horizontal-line {
   display: block;
   margin: 0 auto;
-  border-bottom: 8px solid #27296d;
+  border-bottom: 8px solid var(--light-blue);
   width: 20%;
 }
 
@@ -262,14 +268,6 @@ body {
   transition: 600ms;
 }
 
-.about-links {
-  display: block;
-}
-
-.email-section {
-  margin-top: 40px;
-}
-
 .email-button,
 .linkedin-button,
 .github-button {
@@ -287,15 +285,6 @@ body {
 .website-link:hover {
   color: var(--hover-bg);
   transition: 600ms;
-}
-
-.linkedin-section,
-.github-section {
-  margin-top: 10px;
-}
-
-.github-icon {
-  width: 30px;
 }
 
 /* --------------------------------------------------------------------------SKILLS */
@@ -343,8 +332,10 @@ body {
 
 .portfolio-button {
   /* text-transform: uppercase; */
+  font-size: 1.2rem;
   color: #d30c7d;
   text-decoration: none;
+  text-transform: uppercase;
   position: relative;
   cursor: pointer;
 }
@@ -374,7 +365,7 @@ body {
 }
 
 .right-button {
-  margin-left: 15px;
+  margin-left: 40px;
 }
 
 .hero-button {
@@ -390,6 +381,18 @@ body {
   border: 1px solid #2a2438;
   border-radius: 5px;
   box-shadow: var(--subtle-box-shadow);
+}
+
+.icons-used {
+  max-width: 40px;
+}
+
+.project-icons-container {
+  margin-top: 40px;
+}
+
+.project-buttons {
+  margin-top: 40px;
 }
 
 /* .resume-button-home:hover {
@@ -420,6 +423,40 @@ body {
   margin-bottom: 20px;
 }
 
+.contact-social-links {
+  display: flex;
+  margin-top: 22px;
+}
+.contact-icon-links {
+  display: block;
+  margin-top: 100px;
+}
+
+.github-section {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.linkedin-section,
+.github-section,
+.email-section {
+  display: block;
+  transition: 300ms;
+}
+
+.linkedin-section:hover,
+.github-section:hover,
+.email-section:hover {
+  transform: scale(1.2);
+  z-index: 2;
+}
+
+.github-icon,
+.linkedin-icon,
+.email-icon {
+  width: 60px;
+}
+
 /*---------------------------------------------------------------------------------HOME */
 
 .contact-all {
@@ -436,11 +473,11 @@ body {
 
 /*FOOTER CODE*/
 .footer-code {
-  font-family: var(--fourth-font);
+  font-family: var(--sub-font);
   color: var(--sub-text-color);
   margin-top: 50px;
   margin-bottom: 70px;
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .footer-code-link:hover {
@@ -512,10 +549,6 @@ body {
   .about-section {
     margin-top: 22px;
     text-align: center;
-  }
-
-  .email-linkedin-link {
-    align-items: left;
   }
 
   /*HERO HOME PAGE ITEMS*/
@@ -985,6 +1018,10 @@ body {
     display: block !important;
     margin: 0 auto !important;
   }
+
+  .portfolio-button {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1083,5 +1120,9 @@ body {
   .portfolio-img-update-mobile {
     display: block !important;
     margin: 0 auto !important;
+  }
+
+  .portfolio-button {
+    font-size: 1rem;
   }
 }
