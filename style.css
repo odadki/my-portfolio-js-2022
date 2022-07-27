@@ -22,7 +22,7 @@
   --dark-green: #023f28;
   /* NEW COLORS */
   --background-color: #e6eaf4;
-  --text-color: #404156;
+  --text-color: #323349;
   --light-blue: #a1d2ea;
   --light-purple: #cebef6;
   --blue-purple: #36299e;
@@ -35,12 +35,12 @@ body {
 }
 
 .bold {
-  font-weight: 700;
-  color: #36299e;
+  /* font-weight: 700; */
+  color: var(--blue-purple);
 }
 
-.gray {
-  color: #979991;
+.dot {
+  color: #848484;
 }
 
 /*-----------------------------------------------------------------BOOTSTRAP NAVBAR HEADER*/
@@ -49,7 +49,7 @@ body {
   padding-right: 20px;
   padding-bottom: 0 !important;
   padding-top: 0;
-  background-color: rgb(232, 235, 218, 0.75);
+  background-color: rgb(230, 234, 244, 0.9);
 }
 
 .navbar-light .navbar-toggler {
@@ -72,13 +72,13 @@ body {
 .navbar-nav {
   margin-left: auto;
   margin-right: 50px;
-  font-size: 15px;
+  font-size: 17px;
   align-items: center;
 }
 
 .nav-link {
   color: black !important;
-  margin-left: 20px;
+  margin-left: 30px;
   position: relative;
   padding-bottom: 2px !important;
   padding-left: 0 !important;
@@ -122,7 +122,7 @@ body {
 .hero-container {
   align-items: center;
   padding-top: 160px;
-  padding-bottom: 160px;
+  padding-bottom: 220px;
   /* padding-left: 100px; */
   letter-spacing: 1px;
 }
@@ -183,15 +183,15 @@ body {
 }
 
 .hero-button-portfolio:hover {
-  color: #dbd8e3 !important;
-  background-color: #2a2438;
+  color: var(--background-color) !important;
+  background-color: var(--text-color);
   transition: 600ms;
 }
 
 .horizontal-line {
   display: block;
   margin: 0 auto;
-  border-bottom: 8px solid var(--light-blue);
+  border-bottom: 8px solid var(--light-purple);
   width: 20%;
 }
 
@@ -227,7 +227,7 @@ body {
 .about-paragraph {
   font-family: var(--crimson-text);
   font-size: 1.5rem;
-  color: var(--dark-green);
+
   margin-left: 18px;
 }
 
@@ -333,7 +333,7 @@ body {
 .portfolio-button {
   /* text-transform: uppercase; */
   font-size: 1.2rem;
-  color: #d30c7d;
+  color: var(--blue-purple);
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
@@ -341,7 +341,7 @@ body {
 }
 
 .portfolio-button:hover {
-  color: #d30c7d;
+  color: var(--blue-purple);
 }
 
 .portfolio-button::after {
@@ -360,8 +360,7 @@ body {
 .portfolio-button:hover::after {
   transform: scaleX(1);
   transform-origin: left;
-
-  color: #d30c7d;
+  color: var(--blue-purple);
 }
 
 .right-button {
@@ -373,12 +372,12 @@ body {
 }
 
 .resume-button-home {
-  color: #2a2438;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 17px;
   text-shadow: none;
   padding: 10px 30px;
-  border: 1px solid #2a2438;
+  border: 1px solid var(--text-color);
   border-radius: 5px;
   box-shadow: var(--subtle-box-shadow);
 }
@@ -411,11 +410,11 @@ body {
 }
 
 .form-control {
-  border: 1px solid gray;
+  border: 1px solid none;
 }
 
 .form-control:focus {
-  outline: 1.5px solid red;
+  outline: 1px solid var(--light-blue);
 }
 /* ADDS CLASS WHEN BUTTON IS CLICKED */
 .contact-notification-class-success {
@@ -474,15 +473,39 @@ body {
 /*FOOTER CODE*/
 .footer-code {
   font-family: var(--sub-font);
-  color: var(--sub-text-color);
+  color: var(--text-color);
   margin-top: 50px;
   margin-bottom: 70px;
   font-size: 13px;
 }
 
+.footer-code-link {
+  position: relative;
+  color: var(--blue-purple);
+  text-decoration: none;
+}
+
 .footer-code-link:hover {
-  color: var(--sub-text-color);
+  color: var(--blue-purple);
   transition: 600ms;
+}
+
+.footer-code-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.footer-code-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 /*-----------------------------------------------------------------------------------MEDIA QUERIES*/
@@ -551,6 +574,16 @@ body {
     text-align: center;
   }
 
+  .about-me-all {
+    align-items: center !important;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  .all-buttons {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
   /*HERO HOME PAGE ITEMS*/
   .hero-title {
     /* font-size: 27px; */
@@ -579,13 +612,36 @@ body {
     display: block !important;
     margin: 0 auto !important;
   }
+
+  .portfolio-each-project {
+    padding-bottom: 30px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 820px) {
-  /* .navbar {
-    padding-left: 30px;
-    padding-right: 0;
-  } */
+  .navbar {
+    padding-top: 4px;
+  }
+  .navbar-brand {
+    margin-left: 20px;
+    font-size: 35px;
+  }
+
+  .logo-text {
+    margin-left: 20px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar-collapse {
+    padding: 80px;
+  }
 
   .hero-title {
     font-size: 2.9rem;
@@ -614,6 +670,13 @@ body {
     margin-bottom: 20px;
     text-align: center;
   }
+
+  .about-me-all {
+    align-items: center !important;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
   .resume-button-home {
     font-size: 17px;
     padding: 9px 21px;
@@ -660,10 +723,38 @@ body {
     display: block !important;
     margin: 0 auto !important;
   }
+
+  .portfolio-each-project {
+    padding-bottom: 30px;
+  }
 }
 
 @media (min-width: 643px) and (max-width: 767px) {
   /*HERO HOME PAGE ITEMS*/
+  .navbar {
+    padding-top: 4px;
+  }
+  .navbar-brand {
+    margin-left: 20px;
+    font-size: 35px;
+  }
+
+  .logo-text {
+    margin-left: 20px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar-collapse {
+    padding: 80px;
+  }
+
   .hero-title {
     font-size: 2.6rem;
     margin-bottom: 0;
@@ -690,6 +781,13 @@ body {
     margin-top: 10px !important;
     margin-bottom: 20px;
   }
+
+  .about-me-all {
+    align-items: center !important;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
   .resume-button-home {
     font-size: 17px;
     padding: 9px 21px;
@@ -733,10 +831,38 @@ body {
     display: block !important;
     margin: 0 auto !important;
   }
+
+  .portfolio-each-project {
+    padding-bottom: 30px;
+  }
 }
 
 @media (min-width: 486px) and (max-width: 642px) {
   /*HERO HOME PAGE ITEMS*/
+  .navbar {
+    padding-top: 4px;
+  }
+  .navbar-brand {
+    margin-left: 20px;
+    font-size: 35px;
+  }
+
+  .logo-text {
+    margin-left: 20px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar-collapse {
+    padding: 80px;
+  }
+
   .hero-title {
     font-size: 2.6rem;
     margin-bottom: 0;
@@ -762,6 +888,12 @@ body {
   .hero-button {
     margin-top: 10px !important;
     margin-bottom: 20px;
+  }
+
+  .about-me-all {
+    align-items: center !important;
+    text-align: center;
+    padding-bottom: 60px;
   }
 
   .resume-button-home {
@@ -814,10 +946,38 @@ body {
     display: block !important;
     margin: 0 auto !important;
   }
+
+  .portfolio-each-project {
+    padding-bottom: 30px;
+  }
 }
 
 @media (min-width: 415px) and (max-width: 485px) {
   /*HERO HOME PAGE ITEMS*/
+  .navbar {
+    padding-top: 4px;
+  }
+  .navbar-brand {
+    margin-left: 20px;
+    font-size: 35px;
+  }
+
+  .logo-text {
+    margin-left: 20px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .navbar-nav {
+    margin-left: auto;
+  }
+
+  .navbar-collapse {
+    padding: 80px;
+  }
+
   .hero-title {
     font-size: 2.6rem;
     margin-bottom: 0;
@@ -838,6 +998,12 @@ body {
     text-align: center;
     align-items: center !important;
     margin-bottom: 30px !important;
+  }
+
+  .about-me-all {
+    align-items: center !important;
+    text-align: center;
+    padding-bottom: 60px;
   }
 
   .hero-button {
@@ -931,6 +1097,23 @@ body {
   .home-paragraph {
     margin-top: 16px;
     font-size: 11px;
+  }
+
+  .about-me-all {
+    align-items: center !important;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+
+  .hero-button,
+  .all-buttons {
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  .all-buttons {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
   }
 
   .about-header {
@@ -1035,6 +1218,17 @@ body {
 
   .navbar-toggler {
     margin-right: 0px;
+  }
+
+  .all-buttons {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+  }
+
+  .about-me-all {
+    align-items: center !important;
+    text-align: center;
+    padding-bottom: 60px;
   }
 
   .about-header {
