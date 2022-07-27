@@ -410,11 +410,12 @@ body {
 }
 
 .form-control {
-  border: 1px solid none;
+  border: 1px solid var(--text-color);
 }
 
 .form-control:focus {
-  outline: 1px solid var(--light-blue);
+  box-shadow: none !important;
+  outline: 2px solid var(--light-purple) !important;
 }
 /* ADDS CLASS WHEN BUTTON IS CLICKED */
 .contact-notification-class-success {
@@ -585,9 +586,6 @@ body {
     margin-left: 0 !important;
   }
   /*HERO HOME PAGE ITEMS*/
-  .hero-title {
-    /* font-size: 27px; */
-  }
 
   .hero-info {
     font-size: 15px;
