@@ -614,6 +614,10 @@ body {
   .portfolio-each-project {
     padding-bottom: 30px;
   }
+
+  .contact-all {
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 820px) {
@@ -725,6 +729,10 @@ body {
   .portfolio-each-project {
     padding-bottom: 30px;
   }
+
+  .contact-all {
+    text-align: center;
+  }
 }
 
 @media (min-width: 643px) and (max-width: 767px) {
@@ -832,6 +840,10 @@ body {
 
   .portfolio-each-project {
     padding-bottom: 30px;
+  }
+
+  .contact-all {
+    text-align: center;
   }
 }
 
@@ -947,6 +959,10 @@ body {
 
   .portfolio-each-project {
     padding-bottom: 30px;
+  }
+
+  .contact-all {
+    text-align: center;
   }
 }
 
@@ -1066,6 +1082,10 @@ body {
   .portfolio-img-update-mobile {
     display: block !important;
     margin: 0 auto !important;
+  }
+
+  .contact-all {
+    text-align: center;
   }
 }
 
@@ -1203,6 +1223,10 @@ body {
   .portfolio-button {
     font-size: 1rem;
   }
+
+  .contact-all {
+    text-align: center;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1316,5 +1340,9 @@ body {
 
   .portfolio-button {
     font-size: 1rem;
+  }
+
+  .contact-all {
+    text-align: center;
   }
 }
