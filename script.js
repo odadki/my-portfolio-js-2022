@@ -15,6 +15,39 @@ var options = {
 
 var typed = new Typed(".text-animation", options);
 
+// ------------------------------SKILLS ANIMATION
+const faders = document.querySelectorAll(".fade-row");
+const sliders = document.querySelectorAll(".slide-in");
+const slidersLeft = document.querySelectorAll(".slide-in-left");
+
+const skillsOptions = {
+  root: null,
+  threshold: 0,
+  // rootMargin: "-250px",
+};
+
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    }
+    console.log(entry.target);
+    entry.target.classList.add("appear");
+    observer.unobserve(entry.target);
+  });
+}, skillsOptions);
+
+faders.forEach((fade) => {
+  observer.observe(fade);
+});
+
+sliders.forEach((slide) => {
+  observer.observe(slide);
+});
+
+slidersLeft.forEach((leftSlide) => {
+  observer.observe(leftSlide);
+});
 // ---------------CONTACT SUBMIT BUTTON
 
 // let formSubmit = document.getElementById("form-id");
