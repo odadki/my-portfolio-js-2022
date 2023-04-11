@@ -54,7 +54,7 @@
       </div>
 
       <button
-        class="navbar-toggler"
+        class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
         id="navbarToggle"
         type="button"
         data-toggle="collapse"
@@ -63,7 +63,10 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <!-- <span class=".navbar-light navbar-toggler-icon"></span> -->
+        <span class="toggler-icon top-bar"></span>
+        <span class="toggler-icon middle-bar"></span>
+        <span class="toggler-icon bottom-bar"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
@@ -119,7 +122,7 @@
                 href="#contact-id"
                 class="resume-button-home hero-button-contact"
               >
-                CONTACT ME
+                CONTACT
               </a>
             </div>
           </div>
@@ -176,15 +179,15 @@
               >'s ZTM
               <br />
               <br />
-              I'm enjoy creating things, refining them, and making them better.
-              I am great at working independently and with others, and look
+              I enjoy creating things, refining them, and making them better. I
+              am great at working independently and with others, and look
               forward to working with a team that shares similar values.
             </p>
             <div class="all-buttons">
               <div class="hero-button">
                 <a
-                  href="./img/frontend-resume-oct-2022.pdf"
-                  class="resume-button-home hero-button-portfolio"
+                  href="./img/danielle-oda-resume.pdf"
+                  class="resume-button-home hero-button-portfolio resume"
                   target="_blank"
                 >
                   RESUME
@@ -203,103 +206,137 @@
         <h3 class="about-title text-center mb-5">
           Tools I use to create<span class="dot">:</span>
         </h3>
-        <div class="row mb-4 d-flex justify-content-center">
-          <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
-            <img class="icon" src="./icons/html-5-100.png" />
-            <span class="icon-text">HTML</span>
+        <div class="skills-container">
+          <!-- ROW 1 -->
+          <div class="row mb-4 d-flex justify-content-center icon-row fade-row">
+            <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
+              <img class="icon" src="./icons/html-5-100.png" />
+              <span class="icon-text">HTML</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
+              <img class="icon" src="./icons/css3-100.png" />
+              <span class="icon-text">CSS</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
+              <img class="icon" src="./icons/javascript-100.png" />
+              <span class="icon-text">JAVASCRIPT</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
+              <img class="icon" src="./icons/react-100.png" />
+              <span class="icon-text">REACT</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
+              <img class="icon" src="./icons/git-100.png" />
+              <span class="icon-text">GIT</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
+              <img class="icon" src="./icons/github-100.png" />
+              <span class="icon-text">GITHUB</span>
+            </div>
           </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
-            <img class="icon" src="./icons/css3-100.png" />
-            <span class="icon-text">CSS</span>
+          <!-- ROW 2 -->
+          <div class="row mb-4 d-flex justify-content-center icon-row fade-row">
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/visual-studio-100.png" />
+              <span class="icon-text">VS CODE</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/rest-api-100.png" />
+              <span class="icon-text">RESTFUL APIs</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/firebase-100.png" />
+              <span class="icon-text">FIREBASE</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/sass-100.png" />
+              <span class="icon-text">SASS</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/flexbox-100.png" />
+              <span class="icon-text">FLEXBOX</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/responsive-design-100.png" />
+              <span class="icon-text">RESPONSIVE DESIGN</span>
+            </div>
           </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
-            <img class="icon" src="./icons/javascript-100.png" />
-            <span class="icon-text">JAVASCRIPT</span>
+          <!-- ROW 3 -->
+          <div class="row mb-4 d-flex justify-content-center icon-row fade-row">
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/terminal-100.png" />
+              <span class="icon-text">TERMINAL</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/bootstrap-96.png" />
+              <span class="icon-text">BOOTSTRAP</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/codepen-100.png" />
+              <span class="icon-text">CODEPEN</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/ux-design-100.png" />
+              <span class="icon-text">UX DESIGN</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/figma-100.png" />
+              <span class="icon-text">FIGMA</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/adobe-xd-100.png" />
+              <span class="icon-text">ADOBE XD</span>
+            </div>
           </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
-            <img class="icon" src="./icons/react-100.png" />
-            <span class="icon-text">REACT</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
-            <img class="icon" src="./icons/git-100.png" />
-            <span class="icon-text">GIT</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4 col-sm-4">
-            <img class="icon" src="./icons/github-100.png" />
-            <span class="icon-text">GITHUB</span>
-          </div>
-        </div>
-        <!-- ROW 2 -->
-        <div class="row mb-4 d-flex justify-content-center">
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/visual-studio-100.png" />
-            <span class="icon-text">VS CODE</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/rest-api-100.png" />
-            <span class="icon-text">RESTFUL APIs</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/firebase-100.png" />
-            <span class="icon-text">FIREBASE</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/sass-100.png" />
-            <span class="icon-text">SASS</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/flexbox-100.png" />
-            <span class="icon-text">FLEXBOX</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/responsive-design-100.png" />
-            <span class="icon-text">RESPONSIVE DESIGN</span>
-          </div>
-        </div>
-        <!-- ROW 3 -->
-        <div class="row mb-4 d-flex justify-content-center">
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/terminal-100.png" />
-            <span class="icon-text">TERMINAL</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/bootstrap-96.png" />
-            <span class="icon-text">BOOTSTRAP</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/codepen-100.png" />
-            <span class="icon-text">CODEPEN</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/ux-design-100.png" />
-            <span class="icon-text">UX DESIGN</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/figma-100.png" />
-            <span class="icon-text">FIGMA</span>
-          </div>
-          <div class="icon-container col-xl col-lg-2 col-md-4">
-            <img class="icon" src="./icons/adobe-xd-100.png" />
-            <span class="icon-text">ADOBE XD</span>
+          <!-- ROW 4 -->
+          <div class="row mb-4 d-flex justify-content-center icon-row fade-row">
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/icons8-php-logo-100.png" />
+              <span class="icon-text">PHP</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/icons8-wordpress-100.png" />
+              <span class="icon-text">WORDPRESS</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img
+                class="icon"
+                src="./icons/icons8-gulp-an-open-source-javascript-toolkit-by-fractal-innovations-96.png"
+              />
+              <span class="icon-text">GULP</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/icons8-docker-100.png" />
+              <span class="icon-text">DOCKER</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/icons8-seo-100.png" />
+              <span class="icon-text">SEO</span>
+            </div>
+            <div class="icon-container col-xl col-lg-2 col-md-4">
+              <img class="icon" src="./icons/icons8-trello-100.png" />
+              <span class="icon-text">TRELLO</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="horizontal-line"></div>
     <!-- PORTFOLIO ----------------------------------------------------------------------------->
     <div id="portfolio-id" class="portfolio-all d-flex justify-content-center">
       <div class="container">
-        <h3 class="about-header">PORTOFLIO</h3>
+        <h3 class="about-header">PORTFOLIO</h3>
         <!-- INDIVIDUAL PROJECT ----------------->
         <div class="row portfolio-each-project">
           <h3 class="about-title mb-5">
             Some projects I built<span class="dot">.</span>
           </h3>
           <div
-            class="portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-left portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <h4>SMARTBRAIN FACE RECOGNITION</h4>
-            <p>
+            <p class="project-paragraph">
               Smartbrain can detect faces in your photographs! If you are
               curious, paste an image link and and see if Smartbrain's RESTful
               API can magically locate those faces!
@@ -329,7 +366,7 @@
             </div>
           </div>
           <div
-            class="portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-right portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <img
               class="portfolio-img-update img-fluid"
@@ -362,10 +399,10 @@
         <!-- INDIVIDUAL PROJECT - EXTRA - SAME AS TOP FORMAT----------------->
         <div class="row portfolio-each-project">
           <div
-            class="portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-left portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <h4>SHOPPING LIST</h4>
-            <p>
+            <p class="project-paragraph">
               Keep this shopping list handy to add, remove, or check off items
               on your next grocery run! Built entirely with HTML, CSS and
               JavaScript, this app combines a colorful design with practical
@@ -394,7 +431,7 @@
             </div>
           </div>
           <div
-            class="portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-right portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <img
               class="portfolio-img-update img-fluid"
@@ -406,10 +443,10 @@
         <!-- INDIVIDUAL PROJECT ----------------->
         <div class="row portfolio-each-project">
           <div
-            class="portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-left portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <h4>ROBOFRIENDS</h4>
-            <p>
+            <p class="project-paragraph">
               Ready for some robots? Take a look at Robofriends app - a fun way
               to filter through robots and see their contact info! The site is
               created with React and is fully responsive so you can view it on
@@ -441,7 +478,7 @@
             </div>
           </div>
           <div
-            class="portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-right portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <img
               class="portfolio-img-update img-fluid"
@@ -452,10 +489,10 @@
         <!-- INDIVIDUAL PROJECT ----------------->
         <div class="row portfolio-each-project">
           <div
-            class="portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-left portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <h4>WEATHER APP</h4>
-            <p>
+            <p class="project-paragraph">
               If you're heading to another city and want to check the weather
               forecast there, look no further! Weather App uses an API that
               allows you to enter a city and view the current conditions and
@@ -487,7 +524,7 @@
             </div>
           </div>
           <div
-            class="portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-right portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <img
               class="portfolio-img-update img-fluid"
@@ -498,10 +535,10 @@
         <!-- INDIVIDUAL PROJECT ----------------->
         <div class="row portfolio-each-project">
           <div
-            class="portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-left portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <h4>DICTIONARY APP</h4>
-            <p>
+            <p class="project-paragraph">
               Need a dictionary on-the-go? Dictionary App is perfect for those
               times you need to look something up - it even has a phonetics API
               that pronounces the word for you so you'll know for certain your
@@ -533,7 +570,7 @@
             </div>
           </div>
           <div
-            class="portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-right portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <img
               class="portfolio-img-update img-fluid"
@@ -544,10 +581,10 @@
         <!-- INDIVIDUAL PROJECT ----------------->
         <div class="row portfolio-each-project">
           <div
-            class="portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-left portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <h4>CARROTS COOKING</h4>
-            <p>
+            <p class="project-paragraph">
               This UX Design project was built as a mobile-first app for kids
               that love to cook! The title was playfully titled "Carrots" with
               kids in mind, and underwent two usability studies to achieve the
@@ -571,7 +608,7 @@
             </div>
           </div>
           <div
-            class="portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="from-right slide-in portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <img
               class="portfolio-img-update img-fluid"
@@ -582,10 +619,10 @@
         <!-- INDIVIDUAL PROJECT ----------------->
         <div class="row portfolio-each-project">
           <div
-            class="portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-left portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <h4>BOUTIQUEAPP</h4>
-            <p>
+            <p class="project-paragraph">
               If you want a clean design with easy checkout, take a look at this
               UX Design project, BoutiqueApp! It features mockups built with
               Figma and includes a simple color scheme with clear buttons so
@@ -606,7 +643,7 @@
             </div>
           </div>
           <div
-            class="portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-right portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <img
               class="portfolio-img-update-mobile img-fluid"
@@ -617,10 +654,10 @@
         <!-- INDIVIDUAL PROJECT ----------------->
         <div class="row portfolio-each-project">
           <div
-            class="portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-left portfolio-individual-text col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <h4>PETCONNECT</h4>
-            <p>
+            <p class="project-paragraph">
               A UX Design project created with Adobe XD that aims to allow users
               to browse PetConnect - a pet adoption vicinity - online and
               schedule a time to visit a pet they are interested in. This
@@ -645,7 +682,7 @@
             </div>
           </div>
           <div
-            class="portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
+            class="slide-in from-right portfolio-individual-img col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12"
           >
             <img
               class="portfolio-img-update img-fluid"
@@ -665,16 +702,12 @@
         </h3>
 
         <div class="row contact-submission-form">
-          <div class="col-xl-6">
-            <h6>
-              If you'd like to contact me on possible work opportunities, ask me
-              any questions, or just want to say hello, please drop me a message
-              - I'd be happy to chat!
-              <br />
-              <br />
-              Thank you, and I look forward to hearing from you!
+          <div class="col-xl-12">
+            <h6 class="contact-paragraph">
+              Contact me for possible work opportunities or to ask me
+              any questions - I'd be happy to chat!
             </h6>
-            <form
+            <!-- <form
               action="https://formsubmit.co/hello.danielleoda@gmail.com"
               method="POST"
               id="form-id"
@@ -728,20 +761,30 @@
                 name="_subject"
                 value="New submission from website!"
               />
-              <!-- <input type="hidden" name="_captcha" value="false" /> -->
-              <input
+              <input type="hidden" name="_captcha" value="false" /> -->
+              <!-- <input
                 type="hidden"
                 name="_autoresponse"
                 value="Thank you for your submission! I will get back to you shortly."
-              />
+              /> -->
             </form>
           </div>
-          <div class="col-xl-6 contact-icon-links">
-            <h4 class="text-center mb-3">SOCIAL LINKS</h4>
-            <p class="text-center">
-              You can also find me in these social spaces!
-            </p>
+          <div class="col-xl-12 contact-icon-links">
+            <h4 class="text-center mb-4">CONTACT LINKS</h4>
             <div class="d-flex justify-content-center contact-social-links">
+              <div class="email-section">
+                <span>
+                  <a
+                    href="mailto: hello.danielleoda@gmail.com"
+                    class="email-button"
+                    target="_blank"
+                    ><img
+                      src="../img/iconmonstr-email-11.svg"
+                      class="email-icon social-link"
+                    />
+                  </a>
+                </span>
+              </div>
               <div class="linkedin-section">
                 <span>
                   <a
@@ -768,15 +811,15 @@
                   </a>
                 </span>
               </div>
-              <div class="email-section">
+              <div class="instagram-section">
                 <span>
                   <a
                     href="https://www.instagram.com/dodabirb/"
-                    class="email-button social-link"
+                    class="instagram-button social-link"
                     target="_blank"
                     ><img
                       src="../img/iconmonstr-instagram-15.svg"
-                      class="email-icon"
+                      class="instagram-icon"
                     />
                   </a>
                 </span>
@@ -816,5 +859,6 @@
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
+    
   </body>
 </html>
