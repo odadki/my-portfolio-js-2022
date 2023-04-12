@@ -33,8 +33,9 @@ body {
   font-family: var(--sub-font);
   background: #e6eaf4;
   color: #404156;
-  /* overflow-x: hidden; */
+  overflow-x: hidden !important;
   margin: 0 auto;
+  box-sizing: border-box !important;
 }
 
 .bold {
@@ -383,10 +384,15 @@ body {
   display: inline-block;
   text-align: center;
   width: 120px;
+  margin-bottom: 40px;
 }
 
 .icon {
   max-width: 96px;
+  transition: all 0.2s ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .icon-sandbox {
@@ -396,6 +402,7 @@ body {
 .icon-text {
   display: block;
   letter-spacing: 1px;
+  margin-top: 5px;
 }
 
 /* -----------------------------------------------------------------PORTFOLIO UPDATE */
@@ -406,6 +413,7 @@ body {
 
 .portfolio-each-project {
   margin-bottom: 80px;
+  overflow-x: hidden;
 }
 
 p.project-paragraph {
@@ -764,7 +772,7 @@ img.icons-used:hover {
 
   .resume-button-home.hero-button-portfolio.resume {
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--text-color) !important;
   }
 
   .col-lg-12.d-flex.justify-content-center {
@@ -777,6 +785,9 @@ img.icons-used:hover {
   }
   .hero-buttons-all > :nth-child(2) {
     display: none;
+  }
+  .icon-container {
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 820px) {
@@ -1007,6 +1018,9 @@ img.icons-used:hover {
   .icon {
     max-width: 50px;
   }
+  .icon-container {
+    margin-bottom: 15px;
+  }
 }
 
 @media (min-width: 486px) and (max-width: 642px) {
@@ -1129,6 +1143,9 @@ img.icons-used:hover {
   }
   .icon-text {
     font-size: 15px;
+  }
+  .icon-container {
+    margin-bottom: 10px;
   }
 }
 
@@ -1258,6 +1275,9 @@ img.icons-used:hover {
   }
   .icon-text {
     font-size: 14px;
+  }
+  .icon-container {
+    margin-bottom: 8px;
   }
 }
 
@@ -1407,6 +1427,9 @@ img.icons-used:hover {
   .icon-text {
     font-size: 13px;
   }
+  .icon-container {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 375px) {
@@ -1540,6 +1563,9 @@ img.icons-used:hover {
   .icon-text {
     font-size: 12px;
   }
+  .icon-container {
+    margin-bottom: 5px;
+  }
 }
 
 /* JS appear animations */
@@ -1549,7 +1575,7 @@ img.icons-used:hover {
 }
 
 .from-left {
-  transform: translateX(25%);
+  transform: translateX(-50%);
 }
 
 .from-right {
@@ -1558,7 +1584,7 @@ img.icons-used:hover {
 
 .from-left,
 .from-right {
-  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 550ms ease-in, transform 400ms ease-in;
   opacity: 0;
 }
 
